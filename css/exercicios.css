@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a7bee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;               
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.volta-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.volta-button {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.volta-button:hover {
+    transform: scale(1.1);
+}
+
+
+.exercise-buttonC {
+    width: 300px;
+    position: absolute;
+    height: auto;
+    left: 820px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: rotate(315deg);
+    margin-top: -350px;
+}
+
+.exercise-buttonR {
+    width: 300px;
+    position:absolute;
+    height: auto;
+    left: 820px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: -500px;
+}
+
+.exercise-buttonR:hover {
+    transform: rotate(20deg) scale(1.1); 
+}
+
+.exercise-buttonC:hover {
+    transform: rotate(335deg) scale(1.1);  
+}

@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Viana Angelim</title>
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="css/rotina.css">
 </head>
 <body>
-    <h1>Minha Rotina Diária</h1> 
-    <img src="midia/WhatsApp Image 2025-03-18 at 02.39.30_af25c9c8.jpg" alt="Foto" width= "120" height="120">
-    <p>Eu sou <strong>Rafael Viana Angelim</strong>, estudante de <strong>Ciências da Computação</strong>
-        <h1>Minha Rotina se consiste em:</h1>
 
+    <div class="volta-container">
+        <a href="exercicios.html">
+            <img src="midia/volta.png" alt="Voltar" class="volta-button">
+        </a>
+    </div>
+
+    <img src="midia/wood.png" alt="Imagem de Fundo" class="fullscreen-image">
+
+    <div class="image-container">
+        <img src="midia/rotinatxt.png" alt="Imagem Balancando" class="balancing-image">
+        <img src="midia/pfp.png" alt="Imagem de Perfil" class="profile-image" onclick="playAudio()">
+        <audio id="perfil-audio">
+            <source src="midia/yt1z.net - Risada do peludão atumalaca (320 KBps).mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <video class="video-rotina" controls>
+        <source src="midia/biqueibau.mp4" type="video/mp4">
+    </video>
+
+    <div class="button-container">
+        <img src="midia/manha.png" alt="Manhã" class="button-image" onclick="mostrarRotina('manha')">
+        <img src="midia/tarde.png" alt="Tarde" class="button-image" onclick="mostrarRotina('tarde')">
+        <img src="midia/noite.png" alt="Noite" class="button-image" onclick="mostrarRotina('noite')">
+    </div>
+
+    <div id="manha" class="rotina" style="display:none;">
         <h2>Manhã</h2>
         <ul>
             <li>Acordar</li>
@@ -21,10 +45,12 @@
             <li>Me arrumar para sair</li>
             <li>Ir para a faculdade</li>
         </ul>
+    </div>
 
+    <div id="tarde" class="rotina" style="display:none;">
         <h2>Tarde</h2>
         <ul>
-            <li>Chegar em casa</li>
+            <li>Chegar em casa (se for cedo)</li>
             <li>Almoçar</li>
             <li>Estudar</li>
             <li>Ir para a academia</li>
@@ -32,7 +58,9 @@
             <li>Chegar em casa</li>
             <li>Estudar ou jogar (dependendo do que tiver para estudar)</li>
         </ul>
+    </div>
 
+    <div id="noite" class="rotina" style="display:none;">
         <h2>Noite</h2>
         <ul>
             <li>Terças-feiras: Ir para a aula de inglês</li>
@@ -41,24 +69,8 @@
             <li>Tomar banho</li>
             <li>Dormir</li>
         </ul>
+    </div>
 
-        <h2>Final de Semana</h2>
-        <ul>
-            <li>Se não tiver nada da faculdade, jogar videogame</li>
-            <li>Descansar ou dormir</li>
-            <li>Fazer exercícios</li>
-        </ul>
-    <p>segue um video engracado hilario de um bebe engracado com um cachorro mais engracado ainda, e um audio de uma risada rindo do video engracado.</p>
-    <video width="320" height="240" controls>
-        <source src="midia/m2-res_480p.mp4" type="video/mp4">
-    </video>
-    
-    <audio controls loop>
-        <source src="midia/risada-atumalaka.mp3" type="audio/mp3">
-
-    </audio>
-
-    <br><br>
-    <a href="cont.html">Contato</a>
+    <script src="script.js"></script>
 </body>
 </html>

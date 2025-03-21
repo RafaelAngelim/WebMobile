@@ -3,46 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        button {
-            background: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 10px;
-        }
-        button:hover {
-            background: #218838;
-        }
-    </style>
+    <title>Escolha um Exercício</title>
+    <link rel="stylesheet" href="css/exercicios.css">
 </head>
 <body>
-
-    <div class="container">
-        <h2>Escolha um Exercício</h2>
-        <button onclick="location.href='cadastro.html'">Cadastro de Usuário</button>
-        <button onclick="location.href='rotina.html'">Rotina</button>
+    <div class="volta-container">
+        <a href="index.html">
+            <img src="midia/volta.png" alt="Voltar" class="volta-button">
+        </a>
     </div>
+    <img src="midia/exerciciowall.png" alt="Imagem de Fundo" class="background-image">
+
+    <a href="cadastro.html">
+        <img src="midia/cadastro.png" alt="Cadastro de Usuário" class="exercise-buttonC">
+    </a>
+
+    <a href="rotina.html">
+        <img src="midia/rotina.png" alt="Rotina" class="exercise-buttonR">
+    </a>
 
 </body>
 </html>
